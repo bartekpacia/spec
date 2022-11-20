@@ -19,23 +19,3 @@ void main() async {
     await Future<void>.delayed(const Duration(milliseconds: 300));
   }
 }
-
-// Future<void> main() async {
-//   final log = Logger();
-
-//   final progress = log.progress('Downloading file');
-
-//   unawaited(Future.delayed(const Duration(milliseconds: 500), () async {
-//     print('will clear screen!');
-//     await Future<void>.delayed(const Duration(seconds: 1));
-//     stdout.write(VT100.clearScreen);
-//   }));
-
-//   log.info('Text that appears when Progress is spinning');
-//   print('Text that appears when Progress is spinning');
-//   print('Text that appears when Progress is spinning');
-
-//   await Future<void>.delayed(const Duration(seconds: 3));
-
-//   progress.complete('Downloaded file');
-// }
